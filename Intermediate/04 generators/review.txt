@@ -1,0 +1,59 @@
+Review
+Congratulations! You have completed the Generators lesson!
+
+In this lesson, you learned how to:
+
+Create generator functions using yield
+Implement generator expressions
+Use built-in generator methods like .send(), .throw(), and .close()
+Connect generators into single generators
+Use nested or pipelined generators
+Let’s review these topics one final time.
+
+Instructions
+1.
+Create a generator function called graduation_countdown() that will countdown the number of days left before student graduation. It should take in as input days and yield one less day on each next() call, so the last value yielded is 0. Use a while loop for yielding and decrementing the day.
+
+Checkpoint 2 Passed
+
+Stuck? Get a hint
+2.
+Create an equivalent generator expression called countdown_generator for the graduation_countdown generator function. It should generate the days in a descending order starting from the provided days value. Place the code after the days = 25 line.
+
+Checkpoint 3 Passed
+
+Stuck? Get a hint
+3.
+Modify the graduation_countdown() generator function to accept values sent using send(). Use a local variable called days_left to store sent values. Use an if/else statement to check for sent values.
+
+Checkpoint 4 Passed
+
+Stuck? Get a hint
+4.
+Call the graduation_countdown() function and set it to a variable called grad_days.
+
+Iterate through grad_days generator to print the number of days left with a string of “Days Left: x” where x represents the countdown value.
+
+On the 15th day of the graduation countdown, the school president announces that graduation will be moved up 5 days. Send a value of 10 to the grad_days generator when the 15th day in the countdown is reached.
+
+Checkpoint 5 Passed
+
+Stuck? Get a hint
+5.
+It’s our lucky day! The school president announces that graduation will now occur on the 3rd day left of the countdown. Modify the for loop so that when the countdown day is 3, the generator will close. Insert the condition check and close() before the “Days Left” printout.
+
+Checkpoint 6 Passed
+
+Stuck? Get a hint
+6.
+We have three honors achievements to assign to students that are defined within the summa(), magna(), and cum_laude() generator functions. Each honor is assigned based on a given GPA range listed below. Given a list of input GPAs, create a generator function called honors_generator that takes in 1 input argument named gpas that represents the list of GPAs from the variable gpas. The function should use yield from on each input GPA to determine the honors assignment.
+
+Honors Assignment	GPA
+Summa Cum Laude	> 3.9
+Magna Cum Laude	> 3.7
+Cum Laude	> 3.5
+Checkpoint 7 Passed
+
+Stuck? Get a hint
+7.
+Call the connected generator function honors_generator with the gpas list and set it to a variable called honors. Loop through the honors generator and print out each honor_label value to see which honors labels will be generated given the gpas list.
