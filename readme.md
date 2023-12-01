@@ -4,3 +4,4 @@ I've completed all three levels thus far:
 * Learn Python3
 * Intermediate Python
 * Advanced Python
+* Data Structures and Algorithms
