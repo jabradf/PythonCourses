@@ -4,5 +4,7 @@ I've completed all three levels thus far:
 * Learn Python3
 * Intermediate Python
 * Advanced Python
+
+Other courses I have completed include:
 * Data Structures and Algorithms
 * PySpark
